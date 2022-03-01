@@ -1,0 +1,158 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.section
+{
+    /* background-image: url(wal.jpg); */
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: image 3s infinite alternate;
+}
+@keyframes image {
+    0% {
+      background-image: url('wal.jpg');
+    }
+    100% {
+      background-image: url('wal2.jpg');
+    }
+  }
+  .box
+  {
+      width: 40rem;
+      height:27.6rem;
+      border: 2px solid black;
+      /* background-color: aqua; */
+        margin: auto;
+       justify-content: center;
+        align-items: center;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       background: rgba(0, 0, 0, 0.7);
+  
+  }
+  .box .heading 
+  {
+      background: rgba(241, 98, 98, 0.7);
+      color: white;
+      padding: 0.1rem;
+      text-align: center;
+  }
+  .form
+  {
+      margin-top: 3rem;
+  }
+  .name
+  {
+      align-items: center;
+      /* background-color: aquamarine; */
+      text-align: center;
+      width: 17rem;
+      height: 2.5rem;
+      margin: 0.6rem;
+      border-radius: 7px;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .button
+  {
+      /* justify-content: center;s */
+      text-align: center;
+      /* align-items: center; */
+  }
+  .button .btn
+  {
+      width: 20rem;
+      height: 3rem;
+      border-radius: 6px;
+      font-size: 1.7rem;
+      background-color: burlywood;
+  }
+  .box .footer
+  {
+      width: 100%;
+      height: 2.3rem;
+       padding-bottom: 1.5rem;
+      border: 2px solid rgb(15, 13, 13);
+      margin-top: 3.1rem;
+      background-color: rgb(59, 56, 57);
+  }
+  .box .footer h2
+  {
+     
+      text-align: center;
+      font-size: 1.8rem;
+      color: rgb(228, 220, 225);
+  
+  }
+  .form-control
+  {
+    width: 10rem;
+    height: 3rem;
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+ 
+  
+  @media screen and (max-width: 665px)
+  {
+     .box
+    {
+        width:20rem;
+        height: 27rem;
+    }
+    .box .heading h1
+    {
+        font-size: 20px;
+    }
+    .name
+    {
+        font-size: 13px;
+        width: 13rem;
+        margin: 0.6rem;
+        margin-left: 3.5rem;
+       }
+       .button .btn
+       {
+           width: 17rem;
+           height: 3rem;
+           font-size: 1rem;
+       }
+       .section
+{
+    /* background-image: url(wal.jpg); */
+    width: 100%;
+    height: 100vh;
+}
+ .box .footer h2
+  {
+     
+      text-align: center;
+      font-size: 20px;
+      color: rgb(211, 200, 207);
+  
+  }
+  .box .footer
+  {
+      width: 100%;
+      height: 18px;
+  }
+  .form-control
+  {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+    
+  }

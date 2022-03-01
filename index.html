@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calci.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section">
+        <div class="box">
+            <div class="heading"><h1>Find Your Love Efficiency</h1></div>
+            <div class="form">
+                <input type="text" name="name" id="name" placeholder="YOUR NAME"  class="name">
+                <!-- <div class="sign">+</div> -->
+                <input type="text" name="name" id="lname" placeholder="LOVE NAME"  class="name">
+            </div>
+            <div class="button">
+        <input type="button" value="Submit" class="btn" onclick="check()">
+        <br>
+        <input type="text" name=""  id="lovevalue" class="form-control text center w-25 m-auto" placeholder="Love percentage">
+       </div>
+      <div class="footer"><h2>Bless Your Love</h2></div>
+    </div>
+</div>
+
+
+<!-- ------------------------created by abhishek------------------------ -->
+<!-- ----------------------------------------------------- -->
+<!-- ---------------------------------------java-script code------- -->
+<script>
+function check()
+{
+    var lovedata=Math.random() *100;
+   
+
+var name=document.getElementById('name').value;
+var lname=document.getElementById('lname').value;
+if(name=="" || lname=="")
+{
+    alert("please enter your name");
+}
+else if(name.length <=2 || lname.length <=2)
+{
+    alert("please enter accurate name");
+}
+else if(!isNaN(name || lname))
+{
+    alert("numbers are not allowed");
+}
+else
+{
+    lovedata=Math.floor(lovedata);
+    document.getElementById('lovevalue').value=lovedata;
+}
+
+
+}
+
+
+</script>
+
+</body>
+</html>
